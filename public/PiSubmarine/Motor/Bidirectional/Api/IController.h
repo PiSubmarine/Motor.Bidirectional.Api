@@ -4,10 +4,10 @@
 
 namespace PiSubmarine::Motor::Bidirectional::Api
 {
-    class IDriver
+    class IController
     {
 public:
-        virtual ~IDriver() = default;
+        virtual ~IController() = default;
         virtual void SetPowered(bool enabled) = 0;
         [[nodiscard]] virtual bool IsPowered() const = 0;
         [[nodiscard]] virtual SignedNormalizedFraction GetDutyCycle() const = 0;
